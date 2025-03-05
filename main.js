@@ -1,33 +1,46 @@
-$(document).ready(function () {
+$(window).on("load", function () {
+  // 確保所有資源（包括圖片）都已完全載入
   let stationData = []; // 儲存 JSON 資料
   let table; // DataTable 物件
 
-  // 讀取 JSON 並初始化 DataTable
-  fetch("stationinfo.json")
-    .then((response) => response.json())
-    .then((data) => {
-      stationData = data;
+  // 延遲初始化，確保 DOM 完全準備好
+  setTimeout(function () {
+    // 讀取 JSON 並初始化 DataTable
+    fetch("stationinfo.json")
+      .then((response) => response.json())
+      .then((data) => {
+        stationData = data;
 
-      // **只初始化一次 DataTable**
-      table = $("#cpc-stations").DataTable({
-        lengthChange: false,
-        pageLength: 20,
-        responsive: true,
-        destroy: true, // 允許 DataTable 銷毀後重新繪製
-        language: {
-          url: "https://cdn.datatables.net/plug-ins/1.12.1/i18n/zh-HANT.json",
-        },
+        // 檢查表格元素是否存在
+        if ($("#cpc-stations").length === 0) {
+          console.error("找不到表格元素 #cpc-stations");
+          return;
+        }
+
+        // 初始化 DataTable
+        table = $("#cpc-stations").DataTable({
+          lengthChange: false,
+          pageLength: 20,
+          responsive: true,
+          destroy: true,
+          language: {
+            url: "https://cdn.datatables.net/plug-ins/1.12.1/i18n/zh-HANT.json",
+          },
+        });
+
+        renderTable("全部"); // 預設顯示所有站點
+      })
+      .catch((error) => {
+        console.error("讀取站點資料失敗:", error);
       });
-
-      renderTable("全部"); // 預設顯示所有站點
-    });
+  }, 100); // 短暫延遲確保 DOM 準備完成
 
   // 綁定按鈕點擊事件
   $(".filter button").on("click", function () {
     $(".filter button").removeClass("active");
     $(this).addClass("active");
 
-    let selectedType = $(this).val(); 
+    let selectedType = $(this).val();
     console.log(selectedType);
     console.log($(this));
     renderTable(selectedType);
@@ -37,14 +50,14 @@ $(document).ready(function () {
     table.clear().draw(); // 清除舊資料
 
     let filteredData = stationData.filter((station) => {
-      let stationType = station.類別
-        ? station.類別.trim().normalize("NFKC")
-        : "未定義";
-
       if (type === "全部") return true;
-      if (type === "加盟" && stationType === "加盟站") return true;
-      if (type === "直營" && stationType === "自營站") return true;
-      if (type === "其它" && !["自營站", "加盟站"].includes(stationType))
+      if (type === "加盟" && station.類別 === "加盟站") return true;
+      if (type === "直營" && station.類別 === "自營站") return true;
+      if (
+        type === "其它" &&
+        station.類別 != "自營站" &&
+        station.類別 != "加盟站"
+      )
         return true;
 
       return false;
@@ -80,6 +93,19 @@ $(document).ready(function () {
     if (station.超柴) oils.push('<span class="badge bg-dark">超柴</span>');
     return oils.join(" ");
   }
+
+  // function getOils(station) {
+  //   let oils = "";
+  //   if (station.無鉛92 == 1)
+  //     oils += '<span class="badge bg-purple">無鉛92</span>';
+  //   if (station.無鉛95 == 1)
+  //     oils += '<span class="badge bg-primary">無鉛95</span>';
+  //   if (station.無鉛98 == 1)
+  //     oils += '<span class="badge bg-warning">無鉛98</span>';
+  //   if (station.煤油 == 1) oils += '<span class="badge bg-danger">煤油</span>';
+  //   if (station.超柴) oils += '<span class="badge bg-dark">超柴</span>';
+  //   return oils;
+  // }
 
   function getServices(station) {
     const services = [];
