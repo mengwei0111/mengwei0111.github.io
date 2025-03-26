@@ -1,0 +1,687 @@
+{
+    "msg": "Success",
+    "payload": {
+        "events": [{
+                "listedAt": "2025-02-28T00:00:00.000Z",
+                "startedAt": "2025-02-28T06:20:00.000Z",
+                "meta": {
+                    "format": "2D國語",
+                    "source": "tixi",
+                    "sources": {
+                        "tixi": "e9b3e142-6026-4ae5-8172-f8dc8942c0c3"
+                    },
+                    "seatSummary": {
+                        "20250227": {
+                            "sold": 0,
+                            "total": 165,
+                            "maimai": 0,
+                            "updated": 1740697598111
+                        },
+                        "sold": 0,
+                        "total": 165,
+                        "maimai": 0,
+                        "updated": 1740697598111
+                    }
+                },
+                "status": "active",
+                "id": 4229983,
+                "createdAt": "2025-02-27T02:06:46.442Z",
+                "updatedAt": "2025-02-27T23:06:38.111Z",
+                "programId": 11678,
+                "venueId": 1030,
+                "corporationId": 53,
+                "isEarlyBird": false
+            },
+            {
+                "listedAt": "2025-02-28T00:00:00.000Z",
+                "startedAt": "2025-02-28T02:00:00.000Z",
+                "meta": {
+                    "format": "2D國語",
+                    "source": "tixi",
+                    "sources": {
+                        "tixi": "8dba7680-82ad-4363-85c7-7e2633b4ace7"
+                    },
+                    "seatSummary": {
+                        "20250227": {
+                            "sold": 0,
+                            "total": 165,
+                            "maimai": 0,
+                            "updated": 1740697596775
+                        },
+                        "sold": 0,
+                        "total": 165,
+                        "maimai": 0,
+                        "updated": 1740697596775
+                    }
+                },
+                "status": "active",
+                "id": 4229953,
+                "createdAt": "2025-02-27T02:06:46.442Z",
+                "updatedAt": "2025-02-27T23:06:36.775Z",
+                "programId": 11678,
+                "venueId": 1030,
+                "corporationId": 53,
+                "isEarlyBird": true
+            },
+            {
+                "listedAt": "2025-02-28T00:00:00.000Z",
+                "startedAt": "2025-02-28T15:00:00.000Z",
+                "meta": {
+                    "format": "2D國語",
+                    "source": "tixi",
+                    "sources": {
+                        "tixi": "c4a585a0-0f14-460d-8f95-c5c209ca4299"
+                    },
+                    "seatSummary": {
+                        "20250227": {
+                            "sold": 0,
+                            "total": 165,
+                            "maimai": 0,
+                            "updated": 1740697603548
+                        },
+                        "sold": 0,
+                        "total": 165,
+                        "maimai": 0,
+                        "updated": 1740697603548
+                    }
+                },
+                "status": "active",
+                "id": 4230047,
+                "createdAt": "2025-02-27T02:06:46.442Z",
+                "updatedAt": "2025-02-27T23:06:43.548Z",
+                "programId": 11678,
+                "venueId": 1030,
+                "corporationId": 53,
+                "isEarlyBird": false
+            },
+            {
+                "listedAt": "2025-02-28T00:00:00.000Z",
+                "startedAt": "2025-02-28T12:50:00.000Z",
+                "meta": {
+                    "format": "2D國語",
+                    "source": "tixi",
+                    "sources": {
+                        "tixi": "dad9f8ca-3655-4a22-9833-b39ece659cba"
+                    },
+                    "seatSummary": {
+                        "20250227": {
+                            "sold": 1,
+                            "total": 165,
+                            "maimai": 1,
+                            "updated": 1740697602206
+                        },
+                        "sold": 1,
+                        "total": 165,
+                        "maimai": 1,
+                        "updated": 1740697602206
+                    }
+                },
+                "status": "active",
+                "id": 4230032,
+                "createdAt": "2025-02-27T02:06:46.442Z",
+                "updatedAt": "2025-02-27T23:06:42.206Z",
+                "programId": 11678,
+                "venueId": 1030,
+                "corporationId": 53,
+                "isEarlyBird": false
+            },
+            {
+                "listedAt": "2025-02-28T00:00:00.000Z",
+                "startedAt": "2025-02-28T10:40:00.000Z",
+                "meta": {
+                    "format": "2D國語",
+                    "source": "tixi",
+                    "sources": {
+                        "tixi": "a7b5408c-65df-43ac-88bd-7338a099ae71"
+                    },
+                    "seatSummary": {
+                        "20250227": {
+                            "sold": 0,
+                            "total": 165,
+                            "maimai": 0,
+                            "updated": 1740697600779
+                        },
+                        "sold": 0,
+                        "total": 165,
+                        "maimai": 0,
+                        "updated": 1740697600779
+                    }
+                },
+                "status": "active",
+                "id": 4230014,
+                "createdAt": "2025-02-27T02:06:46.442Z",
+                "updatedAt": "2025-02-27T23:06:40.779Z",
+                "programId": 11678,
+                "venueId": 1030,
+                "corporationId": 53,
+                "isEarlyBird": false
+            },
+            {
+                "listedAt": "2025-02-28T00:00:00.000Z",
+                "startedAt": "2025-02-28T08:30:00.000Z",
+                "meta": {
+                    "format": "2D國語",
+                    "source": "tixi",
+                    "sources": {
+                        "tixi": "36ed2664-46a3-4308-9dc2-b9dadbc57368"
+                    },
+                    "seatSummary": {
+                        "20250227": {
+                            "sold": 0,
+                            "total": 165,
+                            "maimai": 0,
+                            "updated": 1740697599409
+                        },
+                        "sold": 0,
+                        "total": 165,
+                        "maimai": 0,
+                        "updated": 1740697599409
+                    }
+                },
+                "status": "active",
+                "id": 4229998,
+                "createdAt": "2025-02-27T02:06:46.442Z",
+                "updatedAt": "2025-02-27T23:06:39.409Z",
+                "programId": 11678,
+                "venueId": 1030,
+                "corporationId": 53,
+                "isEarlyBird": false
+            },
+            {
+                "listedAt": "2025-02-28T00:00:00.000Z",
+                "startedAt": "2025-02-28T04:10:00.000Z",
+                "meta": {
+                    "format": "2D國語",
+                    "source": "tixi",
+                    "sources": {
+                        "tixi": "51fdc44f-8ff1-42ff-b906-15b38f6621b4"
+                    },
+                    "seatSummary": {
+                        "20250227": {
+                            "sold": 0,
+                            "total": 165,
+                            "maimai": 0,
+                            "updated": 1740697598068
+                        },
+                        "sold": 0,
+                        "total": 165,
+                        "maimai": 0,
+                        "updated": 1740697598068
+                    }
+                },
+                "status": "active",
+                "id": 4229969,
+                "createdAt": "2025-02-27T02:06:46.442Z",
+                "updatedAt": "2025-02-27T23:06:38.068Z",
+                "programId": 11678,
+                "venueId": 1030,
+                "corporationId": 53,
+                "isEarlyBird": false
+            },
+            {
+                "listedAt": "2025-02-28T00:00:00.000Z",
+                "startedAt": "2025-02-28T11:20:00.000Z",
+                "meta": {
+                    "format": "2D英語",
+                    "source": "tixi",
+                    "sources": {
+                        "tixi": "c0b4d3c6-6822-4096-a3c6-213070811cfd"
+                    },
+                    "seatSummary": {
+                        "20250227": {
+                            "sold": 0,
+                            "total": 46,
+                            "maimai": 0,
+                            "updated": 1740697600797
+                        },
+                        "sold": 0,
+                        "total": 46,
+                        "maimai": 0,
+                        "updated": 1740697600797
+                    }
+                },
+                "status": "active",
+                "id": 4230019,
+                "createdAt": "2025-02-27T02:06:46.442Z",
+                "updatedAt": "2025-02-27T23:06:40.798Z",
+                "programId": 11679,
+                "venueId": 1031,
+                "corporationId": 53,
+                "isEarlyBird": false
+            }
+        ],
+        "programs": [{
+                "name": "夜校女生",
+                "description": "1997年，小愛在升學壓力下進入體制特殊的「一女中夜校」就讀，但夜校生總被認為不如日校生優秀，造成她極度自卑。她與日校好友敏敏一起喜歡上男校的資優生，為此持續假冒成日校生，並把自己推向巨大的謊言坑洞，直到謊言被揭穿。",
+                "type": "movie",
+                "sortOrder": 3140,
+                "rating": "g",
+                "genres": [
+                    "drama",
+                    "romance"
+                ],
+                "status": "active",
+                "availableAt": "2025-02-27T00:00:00.000Z",
+                "meta": {
+                    "authors": [
+                        "陳姸霏",
+                        "項婕如",
+                        "邱以太"
+                    ],
+                    "sources": {
+                        "tixi": "002740"
+                    },
+                    "directors": [
+                        "莊景燊"
+                    ],
+                    "lockOffDay": 0,
+                    "promotionTag": {
+                        "to": "2025/03/07",
+                        "from": "2025/01/23",
+                        "text": "刻繪青春"
+                    },
+                    "isLockedFromBenefit": false,
+                    "availableCorporationIds": [
+                        2,
+                        6,
+                        55,
+                        54,
+                        53,
+                        56,
+                        59,
+                        9,
+                        84,
+                        87,
+                        5,
+                        3,
+                        7
+                    ]
+                },
+                "nameAlternative": "The Uniform",
+                "duration": 6540,
+                "recommendationOrder": null,
+                "id": 11678,
+                "createdAt": "2024-11-20T05:37:55.665Z",
+                "updatedAt": "2025-02-27T09:52:47.473Z",
+                "coverImagePortrait": {
+                    "mime": "image/jpeg",
+                    "format": "local",
+                    "data": "52635886b396fa91b9d8ad07ca3b8b6e.jpg",
+                    "thumb": "https://api.showtimes.com.tw/assets/52/52635886b396fa91b9d8ad07ca3b8b6e.jpg",
+                    "id": 1285418,
+                    "isImage": true,
+                    "isVideo": false,
+                    "url": "https://api.showtimes.com.tw/assets/52/52635886b396fa91b9d8ad07ca3b8b6e.jpg"
+                },
+                "coverImageLandscape": null,
+                "previewVideo": {
+                    "mime": "video/mp4",
+                    "format": "vid",
+                    "data": "KBm90vi_cuc",
+                    "thumb": "https://img.youtube.com/vi/KBm90vi_cuc/default.jpg",
+                    "id": 1288162,
+                    "isImage": false,
+                    "isVideo": true,
+                    "url": "https://youtu.be/KBm90vi_cuc"
+                }
+            },
+            {
+                "name": "柏靈頓：熊熊去秘魯",
+                "description": "在這集中，柏靈頓熊熊來到祕魯的退休熊之家，拜訪他親愛的露西姑姑，他們與布朗一家又再次被捲入一起神秘事件，前往亞馬遜雨林和秘魯的深山之中，展開一場刺激的冒險之旅。",
+                "type": "movie",
+                "sortOrder": 3088,
+                "rating": "g",
+                "genres": [
+                    "adventure",
+                    "comedy",
+                    "family",
+                    "mystery"
+                ],
+                "status": "active",
+                "availableAt": "2025-01-25T00:00:00.000Z",
+                "meta": {
+                    "authors": [
+                        "奧莉薇雅柯爾曼",
+                        "安東尼奧班德拉斯"
+                    ],
+                    "sources": {
+                        "tixi": "002784"
+                    },
+                    "directors": [
+                        "杜加爾威爾遜"
+                    ],
+                    "lockOffDay": 9,
+                    "promotionTag": {
+                        "to": "2025/02/07",
+                        "from": "2025/01/24",
+                        "text": "熊熊冒險"
+                    },
+                    "isLockedFromBenefit": false,
+                    "availableCorporationIds": [
+                        2,
+                        56,
+                        3,
+                        58,
+                        59,
+                        5,
+                        60,
+                        6,
+                        84,
+                        7,
+                        8,
+                        9,
+                        53,
+                        54,
+                        55,
+                        87
+                    ]
+                },
+                "nameAlternative": "Paddington in Peru",
+                "duration": 6360,
+                "recommendationOrder": null,
+                "id": 11679,
+                "createdAt": "2024-11-20T05:47:15.789Z",
+                "updatedAt": "2025-02-04T02:09:19.221Z",
+                "coverImagePortrait": {
+                    "mime": "image/jpeg",
+                    "format": "local",
+                    "data": "3d9b7bb6a485526030556934f30aacb7.jpg",
+                    "thumb": "https://api.showtimes.com.tw/assets/3d/3d9b7bb6a485526030556934f30aacb7.jpg",
+                    "id": 1281198,
+                    "isImage": true,
+                    "isVideo": false,
+                    "url": "https://api.showtimes.com.tw/assets/3d/3d9b7bb6a485526030556934f30aacb7.jpg"
+                },
+                "coverImageLandscape": null,
+                "previewVideo": {
+                    "mime": "video/mp4",
+                    "format": "vid",
+                    "data": "OrkA3l671cE",
+                    "thumb": "https://img.youtube.com/vi/OrkA3l671cE/default.jpg",
+                    "id": 1283506,
+                    "isImage": false,
+                    "isVideo": true,
+                    "url": "https://youtu.be/OrkA3l671cE"
+                }
+            }
+        ],
+        "venues": [{
+                "name": "台中站前秀泰影城",
+                "address": "台中市東區南京路76號",
+                "latitude": null,
+                "longitude": null,
+                "room": "1館8廳",
+                "floor": "4樓",
+                "meta": {
+                    "roomCode": "067",
+                    "sortOrder": 80,
+                    "otherRooms": [
+                        "8廳"
+                    ],
+                    "reservedSeatsCount": 4
+                },
+                "id": 1036,
+                "createdAt": "2017-01-23T11:49:11.779Z",
+                "updatedAt": "2022-09-07T04:40:07.862Z"
+            },
+            {
+                "name": "台中站前秀泰影城",
+                "address": "台中市東區南京路76號",
+                "latitude": null,
+                "longitude": null,
+                "room": "2館13廳",
+                "floor": "4樓",
+                "meta": {
+                    "roomCode": "072",
+                    "sortOrder": 130,
+                    "otherRooms": [
+                        "13廳"
+                    ],
+                    "reservedSeatsCount": 4
+                },
+                "id": 1041,
+                "createdAt": "2017-03-08T12:12:38.292Z",
+                "updatedAt": "2022-09-07T04:40:05.870Z"
+            },
+            {
+                "name": "台中站前秀泰影城",
+                "address": "台中市東區南京路76號",
+                "latitude": null,
+                "longitude": null,
+                "room": "1館3廳(獨享)",
+                "floor": "4樓",
+                "meta": {
+                    "roomCode": "062",
+                    "sortOrder": 30,
+                    "otherRooms": [
+                        "3廳(獨享)"
+                    ],
+                    "reservedSeatsCount": 4
+                },
+                "id": 1031,
+                "createdAt": "2017-01-23T11:46:15.140Z",
+                "updatedAt": "2022-09-07T04:40:07.141Z"
+            },
+            {
+                "name": "台中站前秀泰影城",
+                "address": "台中市東區南京路76號",
+                "latitude": null,
+                "longitude": null,
+                "room": "1館2廳",
+                "floor": "4樓",
+                "meta": {
+                    "roomCode": "061",
+                    "sortOrder": 20,
+                    "otherRooms": [
+                        "2廳"
+                    ],
+                    "reservedSeatsCount": 4
+                },
+                "id": 1030,
+                "createdAt": "2017-01-23T11:45:51.607Z",
+                "updatedAt": "2022-09-07T04:40:08.384Z"
+            },
+            {
+                "name": "台中站前秀泰影城",
+                "address": "台中市東區南京路76號",
+                "latitude": null,
+                "longitude": null,
+                "room": "1館7廳",
+                "floor": "4樓",
+                "meta": {
+                    "roomCode": "066",
+                    "sortOrder": 70,
+                    "otherRooms": [
+                        "7廳"
+                    ],
+                    "reservedSeatsCount": 4
+                },
+                "id": 1035,
+                "createdAt": "2017-01-23T11:48:47.597Z",
+                "updatedAt": "2022-09-07T04:40:05.683Z"
+            },
+            {
+                "name": "台中站前秀泰影城",
+                "address": "台中市東區南京路76號",
+                "latitude": null,
+                "longitude": null,
+                "room": "2館17廳",
+                "floor": "4樓",
+                "meta": {
+                    "roomCode": "076",
+                    "sortOrder": 9,
+                    "otherRooms": [
+                        "17廳"
+                    ],
+                    "seatsCount": 49,
+                    "description": "<p>位於台中站前秀泰S2館4樓，全台唯一迪士尼廳，由迪士尼影業與秀泰影城合作獨家呈現，廳內場景佈置隨著主題電影而更新，給您置身電影場景的身歷其境感，影廳內可容納49人，座椅以主題電影椅套佈置，小朋友能夠得到驚喜與歡笑，大朋友能夠喚起回憶與感動。每季場景佈置都換新，讓您走進永遠都有新鮮感，不同的電影場景永遠打卡打不完。</p>",
+                    "specialVenue": {
+                        "name": "迪士尼廳",
+                        "images": [
+                            "zhanqian.disney.01.jpg",
+                            "zhanqian.disney.02.jpg",
+                            "zhanqian.disney.03.jpg",
+                            "zhanqian.disney.04.jpg"
+                        ],
+                        "ticketTypes": [{
+                                "format": "迪士尼廳 (大孩子)",
+                                "variants": [{
+                                    "type": "全票",
+                                    "price": 550
+                                }]
+                            },
+                            {
+                                "format": "迪士尼廳 (小孩子)",
+                                "variants": [{
+                                    "type": "全票",
+                                    "price": 450
+                                }]
+                            }
+                        ]
+                    },
+                    "reservedSeatsCount": 2
+                },
+                "id": 1045,
+                "createdAt": "2017-11-23T14:04:31.593Z",
+                "updatedAt": "2022-09-07T04:40:08.031Z"
+            },
+            {
+                "name": "台中站前秀泰影城",
+                "address": "台中市東區南京路76號",
+                "latitude": null,
+                "longitude": null,
+                "room": "1館巨幕1廳",
+                "floor": "4樓",
+                "meta": {
+                    "roomCode": "060",
+                    "sortOrder": 10,
+                    "otherRooms": [
+                        "巨幕",
+                        "巨幕1廳"
+                    ],
+                    "description": "全台中最大巨型銀幕廳，廳高15米(約五層樓高)，寬22米，並配備全台第一台EWD雷射4K放映系統，不論在亮度、色度、對比度都是業界最高的標準，提供您畫面最細膩、色彩最鮮豔、畫質最飽滿的觀影品質。",
+                    "specialVenue": {
+                        "name": "超級巨幕廳",
+                        "images": [
+                            "zhanqian.super.01.jpg",
+                            "zhanqian.super.02.jpg",
+                            "zhanqian.super.03.jpg",
+                            "zhanqian.super.04.jpg"
+                        ],
+                        "ticketTypes": [{
+                                "format": "2D巨幕廳",
+                                "variants": [{
+                                        "type": "全票",
+                                        "price": 350
+                                    },
+                                    {
+                                        "type": "優待票",
+                                        "price": 330
+                                    },
+                                    {
+                                        "type": "早場票",
+                                        "price": 290
+                                    },
+                                    {
+                                        "type": "愛心票",
+                                        "price": 175
+                                    }
+                                ]
+                            },
+                            {
+                                "format": "3D巨幕廳",
+                                "variants": [{
+                                        "type": "全票",
+                                        "price": 410
+                                    },
+                                    {
+                                        "type": "優待票",
+                                        "price": 390
+                                    },
+                                    {
+                                        "type": "早場票",
+                                        "price": 350
+                                    },
+                                    {
+                                        "type": "愛心票",
+                                        "price": 205
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "reservedSeatsCount": 6
+                },
+                "id": 1029,
+                "createdAt": "2017-01-23T11:45:11.173Z",
+                "updatedAt": "2022-09-07T04:40:07.692Z"
+            },
+            {
+                "name": "台中站前秀泰影城",
+                "address": "台中市東區南京路76號",
+                "latitude": null,
+                "longitude": null,
+                "room": "1館6廳LOVE",
+                "floor": "4樓",
+                "meta": {
+                    "roomCode": "065",
+                    "sortOrder": 60,
+                    "otherRooms": [
+                        "6廳LOVE"
+                    ],
+                    "seatsCount": 48,
+                    "description": "<div>位於站前秀泰影城S1館4樓，每張座椅為雙人獨家設計沙發，設有免費充電座、貼心置物櫃。獻給情侶們最甜蜜的專屬觀影空間。</div>",
+                    "specialVenue": {
+                        "name": "LOVE廳",
+                        "images": [
+                            "zhanqian.love.01.jpg",
+                            "zhanqian.love.02.jpg",
+                            "zhanqian.love.03.jpg"
+                        ],
+                        "ticketTypes": [{
+                            "format": "Love廳 (雙人套票)",
+                            "variants": [{
+                                "type": "全票",
+                                "price": 999
+                            }]
+                        }]
+                    },
+                    "VenueDeviceCode": "70",
+                    "enabledTicketTypes": [
+                        "set.double-vip-minibar-3"
+                    ],
+                    "reservedSeatsCount": 0
+                },
+                "id": 1034,
+                "createdAt": "2017-01-23T11:47:35.055Z",
+                "updatedAt": "2022-09-07T04:40:06.731Z"
+            },
+            {
+                "name": "台中站前秀泰影城",
+                "address": "台中市東區南京路76號",
+                "latitude": null,
+                "longitude": null,
+                "room": "1館9廳",
+                "floor": "4樓",
+                "meta": {
+                    "roomCode": "068",
+                    "sortOrder": 90,
+                    "otherRooms": [
+                        "9廳"
+                    ],
+                    "reservedSeatsCount": 4
+                },
+                "id": 1037,
+                "createdAt": "2017-01-23T11:49:37.574Z",
+                "updatedAt": "2022-09-07T04:40:06.254Z"
+            }
+        ],
+        "meta": {
+            "total": 102,
+            "page": 0,
+            "limit": 2000,
+            "isAscending": false,
+            "orderBy": "createdAt"
+        }
+    }
+}
