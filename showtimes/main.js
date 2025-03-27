@@ -19,26 +19,24 @@ $(document).ready(function () {
   // 設定 API URL
   const API_URL = `https://api.showtimes.com.tw/1/events/listForCorporation/53?from=${fromDate}&to=${toDate}`;
 
-  console.log("✅ 自動生成的 API URL:", API_URL);
+  console.log("✅ 產生今日日期的 API URL:", API_URL);
 
   fetch(API_URL)
     .then((response) => response.json())
     .then((data) => {
-      console.log("✅ 成功獲取即時 API 資料:", data);
+      console.log("✅ 成功取得即時 API 資料:", data);
 
       const programs = data.payload.programs;
       const events = data.payload.events;
       const venues = data.payload.venues;
 
-      // 添加截斷文字的輔助函數
+      // 加入截斷文字的輔助函數
       function truncateText(text, limit) {
         if (text.length <= limit) return text;
         return text.slice(0, limit) + "...";
       }
 
       programs.forEach((program) => {
-        if (program.name === "夜校女生") return;
-
         let movieEvents = events.filter(
           (event) => event.programId === program.id
         );
@@ -48,12 +46,14 @@ $(document).ready(function () {
         let englishTitle = program.nameAlternative || "";
         let description = truncateText(program.description, 100); // 限制為 100 字
         let genres = program.genres.join(", ");
-        let duration = `${Math.floor(program.duration / 60)}小時${
-          program.duration % 60
+        let duration = `${Math.floor(program.duration / 3600)}小時${
+          (program.duration % 3600) / 60
         }分`;
+      
         let poster = program.coverImagePortrait
-          ? program.coverImagePortrait.url
-          : "default-poster.jpg"; // ✅ 修正
+        ? program.coverImagePortrait.url
+        : "";
+
         let trailer = program.previewVideo ? program.previewVideo.url : "#"; // ✅ 修正，避免 `null` 錯誤
 
         let showtimesByVenue = {};
@@ -74,7 +74,7 @@ $(document).ready(function () {
           }
 
           if (!showtimesByVenue[venueName]) {
-            showtimesByVenue[venueName] = [];
+            showtimesByVenue[venueName] = [];// 初始化為空陣列
           }
           showtimesByVenue[venueName].push(showtime);
         });
@@ -118,6 +118,6 @@ $(document).ready(function () {
     })
 
     .catch((error) => {
-      console.error("❌ 無法獲取 API 資料:", error);
+      console.error("❌ 無法取得 API 資料:", error);
     });
 });
