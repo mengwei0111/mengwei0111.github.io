@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vue To Do List</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.37/vue.global.js"></script>
+
+</head>
+
+<body>
+  <div id="app">
+    <h2>📋 Hello Vue - Simple To Do List</h2>
+    <button @click="addItem">新增任務</button>
+
+    <!-- 任務表單區塊 -->
+    <div class="form-area" v-if="isNew || temp.id">
+      <input type="text" v-model="temp.name" placeholder="請輸入任務內容" />
+      <button @click="confirmEdit">確認</button>
+    </div>
+
+    <!-- 任務列表 -->
+    <ul>
+      <li v-for="item in todos" :key="item.id">
+        <span :style="{ textDecoration: item.done ? 'line-through' : 'none' }">
+          {{ item.name }}
+        </span>
+        <div>
+          <button class="done" @click="toggleDone(item)">✔️</button>
+          <button class="edit" @click="editItem(item)">✏️</button>
+          <button class="delete" @click="deleteItem(item)">🗑️</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
