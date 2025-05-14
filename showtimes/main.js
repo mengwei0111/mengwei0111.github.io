@@ -19,24 +19,28 @@ $(document).ready(function () {
   // 設定 API URL
   const API_URL = `https://api.showtimes.com.tw/1/events/listForCorporation/53?from=${fromDate}&to=${toDate}`;
 
-  console.log("✅ 產生今日日期的 API URL:", API_URL);
+  console.log("✅ 自動生成的 API URL:", API_URL);
 
-  fetch(API_URL)
-    .then((response) => response.json())
-    .then((data) => {
-      console.log("✅ 成功取得即時 API 資料:", data);
+  // 使用 axios 取代 fetch
+  axios.get(API_URL)
+    .then((response) => {
+      // axios 會自動解析 JSON，所以直接使用 response.data
+      const data = response.data;
+      console.log("✅ 成功獲取即時 API 資料:", data);
 
       const programs = data.payload.programs;
       const events = data.payload.events;
       const venues = data.payload.venues;
 
-      // 加入截斷文字的輔助函數
+      // 添加截斷文字的輔助函數
       function truncateText(text, limit) {
         if (text.length <= limit) return text;
         return text.slice(0, limit) + "...";
       }
 
       programs.forEach((program) => {
+        if (program.name === "夜校女生") return;
+
         let movieEvents = events.filter(
           (event) => event.programId === program.id
         );
@@ -46,15 +50,13 @@ $(document).ready(function () {
         let englishTitle = program.nameAlternative || "";
         let description = truncateText(program.description, 100); // 限制為 100 字
         let genres = program.genres.join(", ");
-        let duration = `${Math.floor(program.duration / 3600)}小時${
-          (program.duration % 3600) / 60
+        let duration = `${Math.floor(program.duration / 60)}小時${
+          program.duration % 60
         }分`;
-      
         let poster = program.coverImagePortrait
-        ? program.coverImagePortrait.url
-        : "";
-
-        let trailer = program.previewVideo ? program.previewVideo.url : "#"; // ✅ 修正，避免 `null` 錯誤
+          ? program.coverImagePortrait.url
+          : "default-poster.jpg";
+        let trailer = program.previewVideo ? program.previewVideo.url : "#";
 
         let showtimesByVenue = {};
         movieEvents.forEach((event) => {
@@ -66,7 +68,7 @@ $(document).ready(function () {
           let showtime = eventTime.toLocaleTimeString("zh-TW", {
             hour: "2-digit",
             minute: "2-digit",
-            hourCycle: "h23", // ✅ 24 小時制
+            hourCycle: "h23", // 24 小時制
           });
 
           if (event.isEarlyBird) {
@@ -74,7 +76,7 @@ $(document).ready(function () {
           }
 
           if (!showtimesByVenue[venueName]) {
-            showtimesByVenue[venueName] = [];// 初始化為空陣列
+            showtimesByVenue[venueName] = [];
           }
           showtimesByVenue[venueName].push(showtime);
         });
@@ -116,8 +118,18 @@ $(document).ready(function () {
         $("#dynamic-movie-list").append(movieCard);
       });
     })
-
     .catch((error) => {
-      console.error("❌ 無法取得 API 資料:", error);
+      console.error("❌ 無法獲取 API 資料:", error);
+      // axios 的錯誤對象提供更詳細的信息
+      if (error.response) {
+        // 伺服器回應了錯誤狀態碼
+        console.error("伺服器回應錯誤:", error.response.status, error.response.data);
+      } else if (error.request) {
+        // 請求已發送但沒有收到回應
+        console.error("沒有收到伺服器回應");
+      } else {
+        // 設置請求時發生錯誤
+        console.error("請求設置錯誤:", error.message);
+      }
     });
 });
