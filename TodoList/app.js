@@ -12,7 +12,7 @@ const App = {
       isNew: false, // 是否為新增狀態
     };
   },
- 
+
   methods: {
     // 新增任務
     addItem() {
@@ -31,15 +31,18 @@ const App = {
       if (!this.temp.name) {
         return alert("請輸入任務內容");
       }
-      if (!this.temp.id) {
+      if (this.temp.id) {
+        //判斷ID是否存在
+        // 如果 ID 存在，則為編輯任務
+        // 編輯任務
+        const index = this.todos.findIndex((item) => item.id === this.temp.id);
+        this.todos[index] = this.temp; // 更新任務資料
+      } else {
+        // 如果 ID 不存在，則為新增任務
         // 新增任務
         this.temp.id = new Date().getTime().toString();
         this.temp.done = false;
         this.todos.unshift(this.temp); // 將新任務添加到列表中
-      } else {
-        // 編輯任務
-        const index = this.todos.findIndex((item) => item.id === this.temp.id);
-        this.todos[index] = this.temp; // 更新任務資料
       }
 
       this.isNew = false; // 結束新增
@@ -50,13 +53,13 @@ const App = {
     toggleDone(item) {
       item.done = !item.done; // 切換完成狀態
     },
-    
+
     // 刪除任務
-    
-    deleteItem : function (item) {
+
+    deleteItem(item) {
       // 刪除 todo
       this.todos = this.todos.filter((todo) => todo.id !== item.id); // 使用 filter 過濾出不符合的 id，並重新賦值給 todos 陣列
-      
+
       //第二種寫法
       // //deleteItem : function (index) {
       // // 刪除 todo
