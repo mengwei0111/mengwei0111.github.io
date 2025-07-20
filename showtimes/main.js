@@ -50,8 +50,8 @@ $(document).ready(function () {
         let englishTitle = program.nameAlternative || "";
         let description = truncateText(program.description, 100); // 限制為 100 字
         let genres = program.genres.join(", ");
-        let duration = `${Math.floor(program.duration / 60)}小時${
-          program.duration % 60
+        let duration = `${Math.floor(program.duration / 3600)}小時${
+         ( (program.duration /60) % 60)
         }分`;
         let poster = program.coverImagePortrait
           ? program.coverImagePortrait.url
