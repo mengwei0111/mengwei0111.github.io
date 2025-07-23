@@ -16,8 +16,13 @@
 </head>
 
 <body>
-  <div id="movie-card-list">
+  <div class="date-tabs">
+    <button class="tab-button" data-days="0">今天</button>
+    <button class="tab-button" data-days="1">明天</button>
+    <button class="tab-button" data-days="2">後天</button>
+  </div>
 
+  <div id="movie-card-list">
     <!-- 🔹 這裡是 main.js 動態插入新電影的位置 -->
     <div id="dynamic-movie-list"></div>
   </div>
